@@ -3,7 +3,7 @@
   "scripts": {
     "start": "node copy_resources.js && vite --host",
     "build": "tsc --noEmit && node copy_resources.js && vite build --mode development",
-    "build:prod": "node copy_resources.js && vite build",
+    "build:prod": "vite build",
     "copy_resources": "node copy_resources.js",
     "test": "tsc --noEmit",
     "lint": "eslint",

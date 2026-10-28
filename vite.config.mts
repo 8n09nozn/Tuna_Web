@@ -7,7 +7,7 @@ export default defineConfig((env: ConfigEnv): UserConfig => {
       port: 5000,
     },
     root: './',
-    base: '/',
+    base: env.command === 'build' ? '/Tuna_Web/' : '/',
     publicDir: './public',
     resolve: {
       extensions: ['.ts', '.js'],
@@ -20,6 +20,12 @@ export default defineConfig((env: ConfigEnv): UserConfig => {
       assetsDir: 'assets',
       outDir: './dist',
       sourcemap: env.mode == 'development' ? true : false,
+      rolldownOptions: {
+        input: {
+          main: path.resolve(__dirname, 'index.html'),
+          live2d: path.resolve(__dirname, 'LIVE2D.html'),
+        },
+      },
     },
   };
   return common;
