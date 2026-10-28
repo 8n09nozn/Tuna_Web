@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>TUNA-CHANNEL - うみどりつな公式</title>
+  <!-- フォントなど -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,700;0,800;0,900;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;family=Zen+Maru+Gothic:wght@500;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "marine-navy": "#2b2f59",
+            "marine-navy-deep": "#1d2040",
+            "powder-blue": "#C3E5F4",
+            "powder-blue-light": "#EAF5FA",
+            "powder-blue-soft": "#F3F9FD",
+            "powder-pink": "#ffbfd0",
+            "powder-pink-soft": "#fff0f4",
+            "powder-pink-deep": "#f8a5bc",
+            "coral-accent": "#ffbfd0",
+            "coral-dark": "#e8829b",
+            "coral-soft": "#ffe4ec",
+            "warm-beige": "#FBF0EC",
+            "warm-beige-border": "#EBD5CB",
+            "anchor-gold": "#F8D479",
+            "pure-sailor-white": "#FFFFFF",
+            "surface": "#FAF6F3",
+            "surface-container": "#F5ECE6",
+            "surface-container-high": "#EFE3DC",
+            "on-surface": "#2b2f59",
+            "on-surface-variant": "#4A527A",
+            "outline": "#8990AB",
+            "outline-variant": "#CED3E2"
+          },
+          borderRadius: {
+            "DEFAULT": "1.5rem",
+            "lg": "2.25rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-xl": "3.5rem",
+            "gutter": "1.5rem",
+            "space-md": "1.25rem",
+            "space-lg": "2rem",
+            "margin": "3rem",
+            "space-xs": "0.375rem",
+            "space-sm": "0.75rem"
+          },
+          fontFamily: {
+            "body": ["Zen Maru Gothic", "Plus Jakarta Sans", "sans-serif"],
+            "headline": ["Zen Maru Gothic", "Epilogue", "sans-serif"],
+            "display": ["Zen Maru Gothic", "Epilogue", "sans-serif"],
+            "label": ["Space Grotesk", "Zen Maru Gothic", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body class="bg-warm-beige text-[#2b2f59] font-body antialiased selection:bg-[#ffbfd0] selection:text-[#2b2f59]">
+  <!-- ライン1 -->
+  <header
+    class="bg-pure-sailor-white/95 backdrop-blur-md border-b-4 border-[#2b2f59] sticky top-0 z-50 shadow-[0_4px_0_0_#2b2f59]">
+    <!-- ライン2 -->
+    <div class="h-2 w-full ribbon-gingham-bar"></div>
+    <div class="flex justify-between items-center w-full px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto h-20 min-h-[72px]">
+      <!-- ロゴ -->
+      <a class="flex items-center gap-3 shrink-0 group" href="#">
+        <div
+          class="relative w-11 h-11 bg-powder-pink-soft rounded-2xl nautical-border pop-shadow-sm flex items-center justify-center transition-transform group-hover:scale-105 duration-200">
+          <span class="text-2xl leading-none">🐟</span>
+          <span class="absolute -top-1.5 -right-1.5 text-xs drop-shadow leading-none">🎀</span>
+        </div>
+        <div class="flex flex-col justify-center">
+          <div class="flex items-center gap-2 leading-tight">
+            <span class="text-xl sm:text-2xl font-black text-[#2b2f59] tracking-tight font-display">TUNA-CHANNEL</span>
+          </div>
+          <span class="text-[11px] font-bold text-[#2b2f59]/75 tracking-wider mt-0.5">うみどりつな公式</span>
+        </div>
+      </a>
+      <!-- グローバルナビゲーション -->
+      <nav class="hidden xl:flex items-center gap-4 lg:gap-5">
+
+        <a class="text-[#2b2f59] font-black text-xs lg:text-sm tracking-wider px-3 py-1.5 rounded-full hover:bg-powder-pink-soft transition-all flex items-center gap-1.5"
+          href="#featured-stream">
+          <span class="text-xs">📺</span> INTRODUCTION
+        </a>
+
+        <a class="text-[#2b2f59] font-black text-xs lg:text-sm tracking-wider px-3 py-1.5 rounded-full hover:bg-powder-blue-light transition-all flex items-center gap-1.5"
+          href="#standee">
+          <span class="text-xs">🐟️</span> PROFILE
+        </a>
+
+        <a class="text-[#2b2f59] font-black text-xs lg:text-sm tracking-wider px-3 py-1.5 rounded-full hover:bg-powder-pink-soft transition-all flex items-center gap-1.5"
+          href="#schedule">
+          <span class="text-xs">🗓️</span> SCHEDULE
+        </a>
+
+        <a class="text-[#2b2f59] font-black text-xs lg:text-sm tracking-wider px-3 py-1.5 rounded-full hover:bg-powder-blue-light transition-all flex items-center gap-1.5"
+          href="#videos">
+          <span class="text-xs">🎬</span> VIDEOS
+        </a>
+
+        <a class="text-[#2b2f59] font-black text-xs lg:text-sm tracking-wider px-3 py-1.5 rounded-full hover:bg-powder-pink-soft transition-all flex items-center gap-1.5"
+          href="#merch">
+          <span class="text-xs">🛍️</span> STORE
+        </a>
+
+        <a class="text-[#2b2f59] font-black text-xs lg:text-sm tracking-wider px-3 py-1.5 rounded-full hover:bg-powder-blue-light transition-all flex items-center gap-1.5"
+          href="#guidelines">
+          <span class="text-xs">🎀</span> GUIDELINES
+        </a>
+
+      </nav>
+
+      <!-- ヘッダーなど -->
+      <div class="flex items-center gap-3 shrink-0">
+        <a class="relative flex items-center gap-2 bg-[#ffbfd0] hover:bg-[#f8a5bc] text-[#2b2f59] nautical-border pop-shadow pop-shadow-active px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-black tracking-wider transition-all"
+          href="https://youtube.com" rel="noopener noreferrer" target="_blank">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#e8829b] animate-ping absolute left-5 sm:left-5"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-[#e8829b] inline-block relative"></span>
+          <span>LIVE 配信中</span>
+        </a>
+        <a aria-label="Shopping Bag"
+          class="w-10 h-10 rounded-full bg-pure-sailor-white hover:bg-warm-beige nautical-border pop-shadow-sm flex items-center justify-center hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 transition-all text-[#2b2f59]"
+          href="#merch">
+          <span class="material-symbols-outlined text-xl">shopping_bag</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="w-full overflow-hidden">
+
+    <!-- 背景カラー -->
+    <section class="relative pt-12 pb-20 md:pb-28 sailor-check-bg border-b-4 border-[#2b2f59]" id="featured-stream">
+
+      <!-- 装飾など -->
+      <div class="absolute inset-0 pointer-events-none overflow-hidden opacity-30">
+        <div class="absolute top-10 left-12 text-3xl fluffy-float">🫧</div>
+        <div class="absolute bottom-12 right-20 text-4xl fluffy-float fluffy-float-delay">🎀</div>
+        <div class="absolute top-1/3 right-1/4 text-3xl">🪸</div>
+        <div class="absolute bottom-20 left-1/4 text-2xl">🐟</div>
+      </div>
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-space-lg relative z-10">
+
+        <!-- 小見出し1 -->
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-8">
+          <div
+            class="bg-warm-beige text-[#2b2f59] nautical-border-thin pop-shadow-sm px-3.5 py-1.5 rounded-full text-xs font-black flex items-center gap-1.5">
+            <span>工場からの直送便</span>
+          </div>
+          <div
+            class="bg-warm-beige text-[#2b2f59] nautical-border-thin pop-shadow-sm px-3.5 py-1.5 rounded-full text-xs font-black flex items-center gap-1.5">
+            <span>元気と癒しの天然成分</span>
+          </div>
+          <div
+            class="bg-warm-beige text-[#2b2f59] nautical-border-thin pop-shadow-sm px-3.5 py-1.5 rounded-full text-xs font-black hidden sm:flex items-center gap-1.5">
+            <span>賞味期限：推してくれる間</span>
+          </div>
+        </div>
+
+        <!-- PV関連 -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+          <div class="lg:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left space-y-5">
+            <div
+              class="inline-flex items-center gap-2 bg-[#FCDDE2] text-[#2b2f59] px-4 py-1.5 rounded-full nautical-border-thin text-xs font-black">
+              <span class="w-2.5 h-2.5 rounded-full bg-[#f8a5bc] animate-pulse"></span>
+              うみどりつな 公式
+            </div>
+
+            <h1
+              class="text-3xl sm:text-4xl md:text-5xl font-black text-[#2b2f59] tracking-tight leading-snug font-display">
+              ツナ缶の中から<br />
+              <span
+                class="relative inline-block bg-[#ffbfd0] px-4 py-1 rounded-2xl nautical-border pop-shadow-sm my-1 text-[#2b2f59] rotate-1">
+                ふわふわ癒し
+                <span class="absolute -top-3.5 -right-3 text-2xl">🎀</span>
+              </span><br />
+              をお届けします💭
+            </h1>
+
+            <p class="text-[#2b2f59]/85 text-base sm:text-lg font-bold leading-relaxed max-w-lg">
+              お魚とリボンが大好きな新人VTuber！うみどりつなです♪
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 w-full">
+              <a class="bg-powder-blue hover:bg-[#A8DBF2] text-[#2b2f59] nautical-border pop-shadow-lg pop-shadow-active px-5 py-3.5 rounded-full font-black text-sm sm:text-base flex items-center gap-.5 transition-all"
+                href="https://youtube.com" rel="noopener noreferrer" target="_blank">
+                <span>YouTube チャンネル登録　</span>               
+                <span
+                  class="w-6 h-6 rounded-full bg-pure-sailor-white text-[#2b2f59] flex items-center justify-center text-xs">▶</span>                
+              </a>
+              <a class="bg-warm-beige hover:bg-pure-sailor-white text-[#2b2f59] nautical-border pop-shadow pop-shadow-active px-5 py-3.5 rounded-full font-bold text-sm sm:text-base flex items-center gap-1.5 transition-all"
+                href="#standee">
+                <span>モデルを見る</span>
+                <span class="material-symbols-outlined text-base">expand_circle_down</span>
+              </a>
+            </div>
+
+            <!-- 小見出し2　-->
+            <div class="grid grid-cols-3 gap-3 pt-3 w-full max-w-md">
+              <div class="bg-pure-sailor-white p-3 rounded-2xl nautical-border-thin pop-shadow-sm text-center">
+                <span class="text-[10px] font-black text-outline block">SUBSCRIBERS</span>
+                <span class="text-sm sm:text-base font-black text-[#2b2f59]">2.7万人</span>
+              </div>
+              <div class="bg-pure-sailor-white p-3 rounded-2xl nautical-border-thin pop-shadow-sm text-center">
+                <span class="text-[10px] font-black text-outline block">FIRST DISTRIBUTION DATE</span>
+                <span class="text-sm sm:text-base font-black text-[#e8829b]">？/？</span>
+              </div>
+              <div class="bg-pure-sailor-white p-3 rounded-2xl nautical-border-thin pop-shadow-sm text-center">
+                <span class="text-[10px] font-black text-outline block">FANDOM NAME</span>
+                <span class="text-sm sm:text-base font-black text-[#2b2f59]">りつなー</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div
+              class="relative bg-pure-sailor-white rounded-3xl nautical-border pop-shadow-lg p-4 sm:p-6 transition-transform hover:-translate-y-1 duration-300">
+
+              <div class="flex items-center justify-between border-b-2 border-warm-beige-border pb-3 mb-4 px-1">
+                <div class="flex items-center gap-2">
+                  <span
+                    class="w-8 h-8 rounded-full bg-[#ffbfd0] nautical-border-thin flex items-center justify-center font-bold text-xs text-[#2b2f59]">🎀</span>
+                  <div>
+                    <span class="text-xs font-black tracking-wide text-[#2b2f59] block leading-none">紹介PV</span>
+                    <span class="text-[10px] text-[#2b2f59]/60 font-bold">PROMOTIONAL VIDEO</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <span
+                    class="bg-warm-beige text-[#2b2f59] px-2.5 py-0.5 rounded-full text-[11px] font-black nautical-border-thin">
+                    1080p HD
+                  </span>
+                </div>
+              </div>
+
+              <div class="relative aspect-video w-full rounded-2xl overflow-hidden nautical-border bg-[#2b2f59] group">
+
+                <!-- <img alt="うみどりつな紹介PVサムネイル" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" src="BRZX6047.mp4"/> -->
+
+
+                <!-- <div class="absolute inset-0 bg-gradient-to-t from-[#2b2f59]/85 via-transparent to-black/20 pointer-events-none"></div>
+                    <div class="absolute top-3 left-3 flex items-center gap-2 z-10">
+                    </div>
+                <a class="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                  href="https://youtube.com" rel="noopener noreferrer" target="_blank">
+                  <div
+                    class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#ffbfd0] text-[#2b2f59] nautical-border pop-shadow flex items-center justify-center hover:bg-[#f8a5bc] transition-colors">
+                    <span class="text-2xl sm:text-3xl font-black ml-1">▶</span>
+                  </div>
+                </a>
+-->
+                <video controls>
+                  <source src="image/PV.mp4" type="video/mp4" />
+                  <source src="image/PV.webm" type="video/webm" />
+                </video>
+                <div
+                  class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-pure-sailor-white z-10 pointer-events-none">
+                  <div class="max-w-[80%]">
+                    <div class="text-[11px] text-[#4a4e71] font-bold drop-shadow">TUNA-CHANNEL　うみどりつな🐟🎀</div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="mt-4 bg-warm-beige rounded-2xl p-3.5 nautical-border-thin flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div class="flex items-center gap-2.5">
+                  <div>
+                    <h4 class="text-xs sm:text-sm font-black text-[#2b2f59] leading-tight">【初配信】新人Vtuber、本日出荷です！</h4>
+                    <p class="text-[11px] text-[#2b2f59]/70 font-bold mt-0.5">アーカイブ＆PV公開中！コメント・高評価待ってるよ！</p>
+                  </div>
+                </div>
+                <a class="self-end sm:self-auto bg-powder-blue hover:bg-[#A8DBF2] text-[#2b2f59] nautical-border-thin px-4 py-1.5 rounded-full text-xs font-black shrink-0 transition-colors flex items-center gap-1 shadow-sm"
+                  href="https://youtube.com" rel="noopener noreferrer" target="_blank">
+                  <span>YouTubeで視聴</span>
+                  <span class="material-symbols-outlined text-sm">open_in_new</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- プロフィールなど -->
+    <section class="py-space-xl bg-pure-sailor-white border-b-4 border-[#2b2f59] relative" id="standee">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-space-lg">
+        <div class="flex flex-col items-center text-center mb-12">
+          <div
+            class="inline-flex items-center gap-2 bg-[#ffbfd0] text-[#2b2f59] px-4 py-1.5 rounded-full nautical-border-thin text-xs font-black mb-2 shadow-sm">
+            <span>OFFICIAL MODEL &amp; PROFILE</span>
+          </div>
+          <h2
+            class="text-2xl sm:text-4xl font-black text-[#2b2f59] font-display tracking-tight flex items-center gap-2">
+            <span>LIVE2Dモデル＆プロフィール</span>
+          </h2>
+          <p class="text-xs sm:text-sm font-bold text-[#2b2f59]/70 mt-2 max-w-xl">
+            つなの元気いっぱいなセーラー衣装のLIVE2Dモデルとここだけのプロフィールを大公開！
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+          <div
+            class="lg:col-span-5 bg-gradient-to-b from-powder-blue-light via-warm-beige to-pure-sailor-white rounded-3xl nautical-border pop-shadow-lg p-5 sm:p-6 relative overflow-hidden flex flex-col items-center">
+            <div class="w-full flex items-center justify-between border-b-2 border-warm-beige-border pb-3 mb-4">
+              <span class="text-xs bg-pure-sailor-white nautical-border-thin px-2.5 py-0.5 rounded-full font-bold">
+                VER 1.0
+              </span>
+            </div>
+            
+            <div
+              class="flex items-center gap-1.5 mb-4 w-full max-w-xs justify-center">
+              <button
+                class="bg-[#C3E5F4] text-[#2b2f59] nautical-border-thin px-3 py-1 rounded-full text-xs font-black shadow-sm flex items-center gap-1"
+                type="button">
+                 セーラー服
+              </button>
+            </div>
+
+            <div
+              class="relative w-full max-w-md rounded-2xl nautical-border bg-gradient-to-b from-[#C3E5F4] via-[#E8F4FA] to-[#FFF0F3] p-3 overflow-hidden shadow-inner group">
+              <div class="absolute inset-0 pointer-events-none opacity-40">
+                <div class="absolute top-3 left-4 text-xl">🫧</div>
+                <div class="absolute top-1/4 right-3 text-2xl">🫧</div>
+                <div class="absolute bottom-16 left-3 text-sm">🐟</div>
+                <div class="absolute bottom-8 right-6 text-xl">🎀</div>
+              </div>
+              <div
+                class="relative z-10 flex justify-center items-center overflow-hidden rounded-xl bg-pure-sailor-white/60 backdrop-blur-xs p-2">
+                <iframe src="%BASE_URL%LIVE2D.html" frameborder="0" height="425" width="425"></iframe>
+              </div>
+
+            </div>
+            <div class="w-full flex items-center justify-between mt-4 pt-3 border-t border-[#2b2f59]/15 text-xs">
+              <span class="font-bold text-[#2b2f59]/70 flex items-center gap-1">
+                <span class="material-symbols-outlined text-sm"></span>
+                枠内ドラッグで動きます♪
+              </span>
+              <a class="bg-pure-sailor-white hover:bg-warm-beige text-[#2b2f59] nautical-border-thin px-3 py-1 rounded-full font-black flex items-center gap-1 transition-colors shadow-sm"
+                href="%BASE_URL%LIVE2D.html"
+                target="_blank">
+                <span class="material-symbols-outlined text-sm">zoom_in</span>
+                <span>全画面で表示</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 flex flex-col gap-6" id="profile">
+            <div class="bg-warm-beige rounded-3xl nautical-border pop-shadow-lg p-6 sm:p-8 relative">
+              <div class="flex items-center justify-between border-b-4 border-[#2b2f59] pb-4 mb-6">
+                <div class="flex items-center gap-3">
+                  <div>
+                    <h3 class="text-lg sm:text-xl font-black text-[#2b2f59] font-display flex items-center gap-2">
+                      成分表示
+                    </h3>
+                    <p class="text-[11px] font-bold text-[#2b2f59]/70 tracking-widest">PROFILE</p>
+                  </div>
+                </div>
+                <div
+                  class="bg-powder-blue text-[#2b2f59] px-3.5 py-1 rounded-full text-xs font-black nautical-border-thin px-3 py-1 rounded-full text-xs font-black shadow-sm flex items-center gap-1">
+                  <span>⚓</span> 工場直送！
+                </div>
+              </div>
+
+              <div class="space-y-3.5 bg-pure-sailor-white p-5 rounded-2xl nautical-border-thin">
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between py-2 border-b-2 border-dashed border-warm-beige-border gap-1">
+                  <span class="text-xs font-black text-[#2b2f59]/70 flex items-center gap-1.5">
+                    <span class="text-[#e8829b] text-sm">●</span> 製品名（名前）
+                  </span>
+                  <span class="text-sm font-black text-[#e8829b]">
+                    うみどりつな
+                  </span>
+                </div>
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between py-2 border-b-2 border-dashed border-warm-beige-border gap-1">
+                  <span class="text-xs font-black text-[#2b2f59]/70 flex items-center gap-1.5">
+                    <span class="text-[#e8829b] text-sm">●</span> 身長・体長
+                  </span>
+                  <span class="text-sm font-bold text-[#2b2f59]">
+                    150 cm（ツナ缶50個分）
+                  </span>
+                </div>
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between py-2 border-b-2 border-dashed border-warm-beige-border gap-1">
+                  <span class="text-xs font-black text-[#2b2f59]/70 flex items-center gap-1.5">
+                    <span class="text-[#e8829b] text-sm">●</span> 製造年月日 (誕生日)
+                  </span>
+                  <span class="text-sm font-bold text-[#2b2f59]">
+                    9月21日
+                  </span>
+                </div>
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between py-2 border-b-2 border-dashed border-warm-beige-border gap-1">
+                  <span class="text-xs font-black text-[#2b2f59]/70 flex items-center gap-1.5">
+                    <span class="text-[#e8829b] text-sm">●</span> 好きな食べ物/苦手なこと
+                  </span>
+                  <span class="text-sm font-bold text-[#2b2f59]">
+                    おにぎり/水泳
+                  </span>
+                </div>
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between py-2 border-b-2 border-dashed border-warm-beige-border gap-1">
+                  <span class="text-xs font-black text-[#2b2f59]/70 flex items-center gap-1.5">
+                    <span class="text-[#e8829b] text-sm">●</span> 保存方法
+                  </span>
+                  <span class="text-sm font-bold text-[#2b2f59]">
+                    たくさんの愛とコメントを注いでください！
+                  </span>
+                </div>
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between py-2 gap-1 bg-warm-beige/70 p-2.5 rounded-xl">
+                  <span class="text-xs font-black text-[#2b2f59] flex items-center gap-1.5">
+                    <span
+                      class="text-pure-sailor-white bg-[#2b2f59] rounded-full w-4 h-4 flex items-center justify-center text-[10px]">★</span>
+                    公式ファンネーム
+                  </span>
+                  <span class="text-base font-black text-[#2b2f59] flex items-center gap-1">
+                    りつなー
+                  </span>
+                </div>
+              </div>
+
+              <div class="mt-5 flex flex-wrap gap-2.5">
+                <div
+                  class="bg-pure-sailor-white text-[#2b2f59] nautical-border-thin px-3.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5">
+                  配信タグ: <strong class="text-[#2b2f59] font-black">#つな出荷中</strong>
+                </div>
+                <div
+                  class="bg-pure-sailor-white text-[#2b2f59] nautical-border-thin px-3.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5">
+                  ファンアート: <strong class="text-[#2b2f59] font-black">#つなかんばす</strong>
+                </div>
+                <div
+                  class="bg-pure-sailor-white text-[#2b2f59] nautical-border-thin px-3.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5">
+                  ファンマーク: <strong class="text-base text-[#2b2f59] font-black tracking-wider">🐟️🎀</strong>
+                </div>
+              </div>
+
+              <div
+                class="mt-6 bg-gradient-to-r from-powder-blue via-warm-beige to-[#ffbfd0] rounded-2xl nautical-border pop-shadow p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3 text-center sm:text-left">
+                  <div
+                    class="w-12 h-12 rounded-full bg-pure-sailor-white nautical-border flex items-center justify-center text-2xl shrink-0">
+                    🥫
+                  </div>
+                  <div>
+                    <h4 class="text-sm sm:text-base font-black text-[#2b2f59]">メンバーシップ解禁！</h4>
+                    <p class="text-xs font-bold text-[#2b2f59]/80">バッジ・スタンプ・限定配信など</p>
+                  </div>
+                </div>
+                <a class="bg-pure-sailor-white hover:bg-warm-beige text-[#2b2f59] nautical-border-thin px-4 py-2 rounded-full text-xs font-black flex items-center gap-1.5 transition-colors self-start md:self-auto shadow-sm"
+                  rel="noopener noreferrer" target="_blank">
+                  JOIN MEMBERSHIP
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--　スケジュールなど　-->
+    <section class="py-space-xl bg-warm-beige border-b-4 border-[#2b2f59] relative" id="schedule">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-space-lg">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 text-[#2b2f59] font-black text-xs tracking-wider mb-1">
+              <span class="w-2.5 h-2.5 rounded-full bg-[#f8a5bc]"></span>
+              <span>WEEKLY TIMETABLE</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-black text-[#2b2f59] font-display flex items-center gap-2">
+              <span>今週の出荷予定表</span>
+            </h2>
+          </div>
+          <div
+            class="relative flex items-center gap-2 bg-pure-sailor-white nautical-border-thin px-4 py-2 rounded-full text-xs font-black flex items-center gap-1.5 transition-colors self-start md:self-auto shadow-sm">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#e8829b] animate-ping absolute left-4 sm:left-4"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-[#e8829b] inline-block relative"></span>
+            <span class="text-xs font-black text-[#2b2f59]">LIVE NOW / 11月第1週出荷便 ⚓</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <div
+            class="bg-pure-sailor-white rounded-3xl nautical-border pop-shadow pop-shadow-hover p-5 flex flex-col justify-between transition-all relative overflow-hidden group">
+            <div class="h-2 w-full bg-[#ffbfd0] absolute top-0 left-0"></div>
+            <div>
+              <div class="flex items-center justify-between border-b-2 border-[#2b2f59]/15 pb-2.5 mb-3 mt-1">
+                <span class="text-lg font-black text-[#2b2f59] font-display flex items-center gap-1">
+                  <span>🐟</span> MON 11/2
+                </span>
+                <span
+                  class="bg-[#ffbfd0] text-[#2b2f59] text-[11px] font-black px-2.5 py-0.5 rounded-full nautical-border-thin">
+                  20:00 JST
+                </span>
+              </div>
+              <span
+                class="inline-block bg-warm-beige text-[#2b2f59] text-[11px] font-black px-3 py-1 rounded-full mb-2 nautical-border-thin">
+                歌枠
+              </span>
+              <h3 class="text-sm font-black text-[#2b2f59] leading-snug group-hover:text-[#e8829b] transition-colors">
+                恋愛ソング縛り💕
+              </h3>
+              <p class="text-xs font-bold text-[#2b2f59]/70 mt-2 leading-relaxed">
+                週の初めからみんなを癒します！リクエスト大歓迎✨
+              </p>
+            </div>
+            <div
+              class="mt-4 pt-3 border-t-2 border-dashed border-warm-beige-border flex items-center justify-between text-[11px] font-bold">
+              <span class="text-[#2b2f59]/60">#つな出荷中</span>
+              <span class="text-[#2b2f59] bg-warm-beige px-2 py-0.5 rounded-full">リクエスト募集中</span>
+            </div>
+          </div>
+
+          <div
+            class="bg-pure-sailor-white rounded-3xl nautical-border pop-shadow pop-shadow-hover p-5 flex flex-col justify-between transition-all relative overflow-hidden group">
+            <div class="h-2 w-full bg-powder-blue absolute top-0 left-0"></div>
+            <div>
+              <div class="flex items-center justify-between border-b-2 border-[#2b2f59]/15 pb-2.5 mb-3 mt-1">
+                <span class="text-lg font-black text-[#2b2f59] font-display flex items-center gap-1">
+                  <span>🐟</span> WED 11/4
+                </span>
+                <span
+                  class="bg-powder-blue text-[#2b2f59] text-[11px] font-black px-2.5 py-0.5 rounded-full nautical-border-thin">
+                  21:00 JST
+                </span>
+              </div>
+              <span
+                class="inline-block bg-warm-beige text-[#2b2f59] text-[11px] font-black px-3 py-1 rounded-full mb-2 nautical-border-thin">
+                ゲーム配信
+              </span>
+              <h3 class="text-sm font-black text-[#2b2f59] leading-snug group-hover:text-[#e8829b] transition-colors">
+                初プレイ・全クリ目指す！！
+              </h3>
+              <p class="text-xs font-bold text-[#2b2f59]/70 mt-2 leading-relaxed">
+                最近人気のRPGゲームをみんなでやります！
+              </p>
+            </div>
+            <div
+              class="mt-4 pt-3 border-t-2 border-dashed border-warm-beige-border flex items-center justify-between text-[11px] font-bold">
+              <span class="text-[#2b2f59]/60">#つな出荷中
+              </span>
+              <span class="text-[#2b2f59] bg-warm-beige px-2 py-0.5 rounded-full">待機所オープン</span>
+            </div>
+          </div>
+
+          <div
+            class="bg-pure-sailor-white rounded-3xl nautical-border pop-shadow pop-shadow-hover p-5 flex flex-col justify-between transition-all relative overflow-hidden group">
+            <div class="h-2 w-full bg-[#ffbfd0] absolute top-0 left-0"></div>
+            <div>
+              <div class="flex items-center justify-between border-b-2 border-[#2b2f59]/15 pb-2.5 mb-3 mt-1">
+                <span class="text-lg font-black text-[#2b2f59] font-display flex items-center gap-1">
+                  <span>🐟</span> FRI 11/6
+                </span>
+                <span
+                  class="bg-[#ffbfd0] text-[#2b2f59] text-[11px] font-black px-2.5 py-0.5 rounded-full nautical-border-thin">
+                  22:00 JST
+                </span>
+              </div>
+              <span
+                class="inline-block bg-warm-beige text-[#2b2f59] text-[11px] font-black px-3 py-1 rounded-full mb-2 nautical-border-thin">
+                お絵かき
+              </span>
+              <h3 class="text-sm font-black text-[#2b2f59] leading-snug group-hover:text-[#e8829b] transition-colors">
+                リスナー参加型絵チャ🎨
+              </h3>
+              <p class="text-xs font-bold text-[#2b2f59]/70 mt-2 leading-relaxed">
+                金曜日はつなとまったりお絵描きしよう♪
+              </p>
+            </div>
+            <div
+              class="mt-4 pt-3 border-t-2 border-dashed border-warm-beige-border flex items-center justify-between text-[11px] font-bold">
+              <span class="text-[#2b2f59]/60">#つな出荷中</span>
+              <span class="text-[#2b2f59] bg-warm-beige px-2 py-0.5 rounded-full">まもなく抽選</span>
+            </div>
+          </div>
+
+          <div
+            class="bg-pure-sailor-white rounded-3xl nautical-border pop-shadow pop-shadow-hover p-5 flex flex-col justify-between transition-all relative overflow-hidden group">
+            <div class="h-2 w-full bg-powder-blue absolute top-0 left-0"></div>
+            <div>
+              <div class="flex items-center justify-between border-b-2 border-[#2b2f59]/15 pb-2.5 mb-3 mt-1">
+                <span class="text-lg font-black text-[#2b2f59] font-display flex items-center gap-1">
+                  <span>🐟</span> SAT 11/7
+                </span>
+                <span
+                  class="bg-powder-blue text-[#2b2f59] text-[11px] font-black px-2.5 py-0.5 rounded-full nautical-border-thin">
+                  18:00 JST
+                </span>
+              </div>
+              <span
+                class="inline-block bg-warm-beige text-[#2b2f59] text-[11px] font-black px-3 py-1 rounded-full mb-2 nautical-border-thin">
+                雑談
+              </span>
+              <h3 class="text-sm font-black text-[#2b2f59] leading-snug group-hover:text-[#e8829b] transition-colors">
+                マロ返信＆超重大発表あり！？
+              </h3>
+              <p class="text-xs font-bold text-[#2b2f59]/70 mt-2 leading-relaxed">
+                リアタイしてみんなで見届けてください🎀
+              </p>
+            </div>
+            <div
+              class="mt-4 pt-3 border-t-2 border-dashed border-warm-beige-border flex items-center justify-between text-[11px] font-bold">
+              <span class="text-[#2b2f59]/60">#つな出荷中</span>
+              <span class="text-[#2b2f59] bg-warm-beige px-2 py-0.5 rounded-full">マロ募集中</span>
+              <div
+                class="absolute -right-8 top-4 bg-[#FFBFD0] text-[#2b2f59] text-[10px] font-black px-8 py-0.5 rotate-45 shadow nautical-border-thin">
+                注目！
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 動画一覧など -->
+
+    <section class="py-space-xl bg-pure-sailor-white border-b-4 border-[#2b2f59] relative" id="videos">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-space-lg">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 text-[#2b2f59] font-black text-xs tracking-wider mb-1">
+              <span class="w-2.5 h-2.5 rounded-full bg-[#f8a5bc]"></span>
+              <span>OFFICIAL VIDEOS & STREAM ARCHIVES</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-black text-[#2b2f59] font-display flex items-center gap-2">
+              公式動画・配信アーカイブ</h2>
+          </div>
+          <a class="bg-warm-beige hover:bg-pure-sailor-white text-[#2b2f59] nautical-border-thin px-4 py-2 rounded-full text-xs font-black flex items-center gap-1 transition-colors self-start md:self-auto shadow-sm"
+            href="https://youtube.com" rel="noopener noreferrer" target="_blank">
+            <span>Youtubeチャンネルで全部見る</span>
+            <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div
+            class="bg-pure-sailor-white rounded-3xl nautical-border pop-shadow pop-shadow-hover overflow-hidden transition-all group">
+            <div class="relative aspect-video overflow-hidden border-b-2 border-[#2b2f59]">
+              <img alt="初配信" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                src="image/INZM2130.PNG" />
+              <span
+                class="absolute top-2 left-2 bg-warm-beige text-[#2b2f59] nautical-border-thin text-[11px] font-black px-2.5 py-0.5 rounded-full shadow-sm">初配信アーカイブ</span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-[11px] font-bold text-[#2b2f59]/60 mb-1">
+                <span>再生回数: 100万回</span>
+                <span>•</span>
+                <span>????/?/? Debut</span>
+              </div>
+              <h3 class="text-base font-black text-[#2b2f59] group-hover:text-[#e8829b] transition-colors leading-snug">
+                【初配信】新人Vtuber、本日開封です！🐟🥫
+              </h3>
+              <p class="text-xs font-bold text-[#2b2f59]/70 mt-2 leading-relaxed">
+                うみどりつなの初配信！古参になりませんか？
+              </p>
+            </div>
+          </div>
+
+        <div
+          class="bg-pure-sailor-white rounded-3xl nautical-border pop-shadow pop-shadow-hover overflow-hidden transition-all group">
+          <div class="relative aspect-video overflow-hidden border-b-2 border-[#2b2f59]">
+            <img alt="歌枠" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              src="image/JODT5797.PNG" />
+            <span
+              class="absolute top-2 left-2 bg-warm-beige text-[#2b2f59] nautical-border-thin text-[11px] font-black px-2.5 py-0.5 rounded-full shadow-sm">歌枠</span>
+          </div>
+          <div class="p-5">
+            <div class="flex items-center gap-2 text-[11px] font-bold text-[#2b2f59]/60 mb-1">
+              <span>再生回数: 27万回</span>
+              <span>•</span>
+              <span>????/?/? Stream</span>
+            </div>
+            <h3 class="text-base font-black text-[#2b2f59] group-hover:text-[#e8829b] transition-colors leading-snug">
+              歌枠🐟🥫
+            </h3>
+            <p class="text-xs font-bold text-[#2b2f59]/70 mt-2 leading-relaxed">
+              リクエスト曲をどんどん歌います！
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-pure-sailor-white rounded-3xl nautical-border pop-shadow pop-shadow-hover overflow-hidden transition-all group">
+          <div class="relative aspect-video overflow-hidden border-b-2 border-[#2b2f59]">
+            <img alt="ゲーム配信" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              src="image/FNXQ6788.PNG" />
+            <span
+              class="absolute top-2 left-2 bg-warm-beige text-[#2b2f59] nautical-border-thin text-[11px] font-black px-2.5 py-0.5 rounded-full">ゲーム配信</span>
+          </div>
+          <div class="p-5">
+            <div class="flex items-center gap-2 text-[11px] font-bold text-[#2b2f59]/60 mb-1">
+              <span>再生回数: 7万回</span>
+              <span>•</span>
+              <span>????/?/? Stream</span>
+            </div>
+            <h3 class="text-base font-black text-[#2b2f59] group-hover:text-[#e8829b] transition-colors leading-snug">
+              ゲーム配信🎀🥫
+            </h3>
+            <p class="text-xs font-bold text-[#2b2f59]/70 mt-2 leading-relaxed">
+              初めてのホラーゲームＴＴ見届けてください！
+            </p>
+          </div>
+        </div>
+
+
+        <div
+          class="bg-pure-sailor-white rounded-3xl nautical-border pop-shadow pop-shadow-hover overflow-hidden transition-all group">
+          <div class="relative aspect-video overflow-hidden border-b-2 border-[#2b2f59]">
+            <img alt="雑談" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              src="image/FVWW4565.PNG" />
+            <span
+              class="absolute top-2 left-2 bg-warm-beige text-[#2b2f59] nautical-border-thin text-[11px] font-black px-2.5 py-0.5 rounded-full">雑談</span>
+          </div>
+          <div class="p-5">
+            <div class="flex items-center gap-2 text-[11px] font-bold text-[#2b2f59]/60 mb-1">
+              <span>再生回数: 2万回</span>
+              <span>•</span>
+              <span>????/?/? Stream</span>
+            </div>
+            <h3 class="text-base font-black text-[#2b2f59] group-hover:text-[#e8829b] transition-colors leading-snug">
+              雑談配信🐟🎀
+            </h3>
+            <p class="text-xs font-bold text-[#2b2f59]/70 mt-2 leading-relaxed">
+              りつなー達とおしゃべり✨️ゆっくりしていってね～
+            </p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ショップなど -->
+    <section class="py-space-xl bg-warm-beige border-b-4 border-[#2b2f59] relative" id="merch">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-space-lg">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 text-[#2b2f59] font-black text-xs tracking-wider mb-1">
+              <span class="w-2.5 h-2.5 rounded-full bg-[#f8a5bc]"></span>
+              <span>OFFICIAL ONLINE STORE</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-black text-[#2b2f59] font-display flex items-center gap-2">
+              オンラインストア
+            </h2>
+          </div>
+          <span
+            class="bg-pure-sailor-white text-[#2b2f59] nautical-border-thin px-4 py-2 rounded-full text-xs font-black flex items-center gap-1.5 transition-colors self-start md:self-auto shadow-sm">
+            <span>🚢</span> 全国にお届け！
+          </span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <div
+            class="bg-pure-sailor-white rounded-3xl nautical-border pop-shadow pop-shadow-hover p-5 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="relative aspect-square rounded-2xl overflow-hidden nautical-border mb-4 bg-warm-beige">
+                <img alt="アクリルキーホルダー"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  src="image/DHEI2334.PNG" />
+                <span
+                  class="absolute top-2 left-2 bg-warm-beige text-[#2b2f59] text-[11px] font-black px-2.5 py-0.5 rounded-full nautical-border-thin shadow-sm">
+                  人気No.1
+                </span>
+              </div>
+              <h3 class="text-base font-black text-[#2b2f59] group-hover:text-[#e8829b] transition-colors leading-snug">
+                出荷アクリルキーホルダー
+              </h3>
+              <p class="text-xs font-bold text-[#2b2f59]/60 mt-1">
+                缶詰風パッケージ入り＆複製サイン入りポストカード付き
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t-2 border-warm-beige-border flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-black text-[#2b2f59]/60">PRICE</span>
+                <div class="text-lg font-black text-[#2b2f59]">¥1,300</div>
+              </div>
+              <button
+                class="bg-[#ffbfd0] hover:bg-[#f8a5bc] text-[#2b2f59] nautical-border-thin pop-shadow-sm px-4 py-2 rounded-full text-xs font-black flex items-center gap-1.5 transition-transform active:translate-y-0.5 shadow-sm"
+                type="button">
+                <span class="material-symbols-outlined text-sm">shopping_cart</span>
+                <span>カートに入れる</span>
+              </button>
+            </div>
+          </div>
+
+
+          <div
+            class="bg-pure-sailor-white rounded-3xl nautical-border pop-shadow pop-shadow-hover p-5 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="relative aspect-square rounded-2xl overflow-hidden nautical-border mb-4 bg-powder-pink-soft">
+                <img alt="缶バッジセット"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  src="image/QFLE0343.PNG" />
+                <span
+                  class="absolute top-2 left-2 bg-warm-beige text-[#2b2f59] text-[11px] font-black px-2.5 py-0.5 rounded-full nautical-border-thin">
+                  残りわずか
+                </span>
+              </div>
+              <h3 class="text-base font-black text-[#2b2f59] group-hover:text-[#e8829b] transition-colors leading-snug">
+                ミニキャラ缶バッジ3種セット
+              </h3>
+              <p class="text-xs font-bold text-[#2b2f59]/60 mt-1">
+                キラキラホログラム仕様
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t-2 border-warm-beige-border flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-black text-[#2b2f59]/60">PRICE</span>
+                <div class="text-lg font-black text-[#2b2f59]">¥1,500</div>
+              </div>
+              <button
+                class="bg-[#ffbfd0] hover:bg-[#f8a5bc] text-[#2b2f59] nautical-border-thin pop-shadow-sm px-4 py-2 rounded-full text-xs font-black flex items-center gap-1.5 transition-transform active:translate-y-0.5 shadow-sm"
+                type="button">
+                <span class="material-symbols-outlined text-sm">shopping_cart</span>
+                <span>カートに入れる</span>
+              </button>
+            </div>
+          </div>
+
+
+          <div
+            class="bg-pure-sailor-white rounded-3xl nautical-border pop-shadow pop-shadow-hover p-5 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="relative aspect-square rounded-2xl overflow-hidden nautical-border mb-4 bg-warm-beige">
+                <img alt="ボイス"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  src="image/URZW4505.PNG" />
+                <span
+                  class="absolute top-2 left-2 bg-warm-beige text-[#2b2f59] text-[11px] font-black px-2.5 py-0.5 rounded-full nautical-border-thin">
+                  デジタルコンテンツ
+                </span>
+              </div>
+              <h3 class="text-base font-black text-[#2b2f59] group-hover:text-[#e8829b] transition-colors leading-snug">
+                自己紹介ボイス
+              </h3>
+              <p class="text-xs font-bold text-[#2b2f59]/60 mt-1">
+                期間限定・デビュー記念
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t-2 border-warm-beige-border flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-black text-[#2b2f59]/60">PRICE</span>
+                <div class="text-lg font-black text-[#2b2f59]">¥650</div>
+              </div>
+              <button
+                class="bg-[#ffbfd0] hover:bg-[#f8a5bc] text-[#2b2f59] nautical-border-thin pop-shadow-sm px-4 py-2 rounded-full text-xs font-black flex items-center gap-1.5 transition-transform active:translate-y-0.5 shadow-sm"
+                type="button">
+                <span class="material-symbols-outlined text-sm">shopping_cart</span>
+                <span>カートに入れる</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ガイドラインなど -->
+    <section class="py-space-xl bg-pure-sailor-white border-b-4 border-[#2b2f59] relative" id="guidelines">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-space-lg">
+        <div class="bg-warm-beige rounded-3xl nautical-border pop-shadow-lg p-6 sm:p-10 relative overflow-hidden">
+          <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-8">
+              <span
+                class="bg-[#ffbfd0] text-[#2b2f59] text-xs font-black px-3.5 py-1 rounded-full nautical-border-thin inline-flex items-center gap-1 mb-3">
+                FOR CREATORS &amp; FANS
+              </span>
+              <h2 class="text-2xl sm:text-3xl font-black text-[#2b2f59] font-display flex items-center gap-2">
+                二次創作ガイドライン＆切り抜き動画について
+              </h2>
+              <p class="text-xs sm:text-sm font-bold text-[#2b2f59]/80 mt-3 max-w-2xl leading-relaxed">
+                うみどりつなはファンの皆様によるイラスト、同人誌、切り抜き動画などの二次創作を歓迎＆応援しています！みんなで楽しくおいしくコミュニティを盛り上げましょう！
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                <div class="bg-pure-sailor-white p-4 rounded-2xl nautical-border-thin pop-shadow-sm">
+                  <div class="flex items-center gap-2 text-[#2b2f59] font-black text-sm mb-1.5">
+                    <span class="text-lg">○</span>
+                    <span>大歓迎なこと</span>
+                  </div>
+                  <ul class="text-xs font-bold text-[#2b2f59]/80 space-y-1">
+                    <li>• ファンアート投稿（つなかんぱす）</li>
+                    <li>• ガイドラインに沿った切り抜き動画投稿</li>
+                    <li>• 同人イベントでの二次創作物頒布</li>
+                  </ul>
+                </div>
+                <div class="bg-pure-sailor-white p-4 rounded-2xl nautical-border-thin pop-shadow-sm">
+                  <div class="flex items-center gap-2 text-[#e8829b] font-black text-sm mb-1.5">
+                    <span class="text-lg">✕</span>
+                    <span>ご遠慮いただきたいこと</span>
+                  </div>
+                  <ul class="text-xs font-bold text-[#2b2f59]/80 space-y-1">
+                    <li>• 公式と誤認させる商業的無断転載</li>
+                    <li>• 他者を傷つける誹謗中傷表現</li>
+                    <li>• 配信の全編無編集再アップロード</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap items-center gap-3.5 mt-6">
+                <a class="bg-[#2b2f59] hover:bg-[#1d2040] text-pure-sailor-white nautical-border pop-shadow pop-shadow-active px-5 py-2.5 rounded-full text-xs font-black flex items-center gap-2 transition-transform shadow-sm"
+                  href="mailto:info@example.com">
+                  <span class="material-symbols-outlined text-base">mail</span>
+                  <span>お仕事・企業様のお問い合わせはこちら</span>
+                </a>
+                <a class="text-[#2b2f59] text-xs font-black underline hover:text-[#e8829b] transition-colors flex items-center gap-1"
+                  href="#">
+                </a>
+              </div>
+            </div>
+
+            <div class="lg:col-span-4 flex justify-center">
+              <div
+                class="w-52 h-52 rounded-full bg-[#C3E5F4] nautical-border pop-shadow-lg flex flex-col items-center justify-center p-4 text-center relative shadow-md">
+                <span class="text-4xl mb-1">🐟️🎀</span>
+                <span class="text-base font-black text-[#2b2f59] leading-tight font-display">二次創作<br />大歓迎！</span>
+                <span class="text-[11px] font-black text-[#2b2f59]/70 mt-1 tracking-wider">FAN CREATIONS ARE WELCOME！</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ライン1 -->
+  <footer class="bg-pure-sailor-white border-t-4 border-[#2b2f59] w-full relative">
+    <div class="h-3 w-full ribbon-gingham-bar"></div>
+    <div
+      class="w-full py-10 px-4 sm:px-space-lg max-w-[1360px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+
+      <div class="flex flex-col items-center md:items-start text-center md:text-left gap-1.5">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl">🐟</span>
+          <span class="text-lg font-black text-[#2b2f59] font-display tracking-tight">TUNA-CHANNEL</span>
+          <span
+            class="bg-[#FCDDE2] text-[#2b2f59] text-[10px] font-black px-2.5 py-0.5 rounded-full nautical-border-thin">OFFICIAL</span>
+        </div>
+        <p class="text-xs font-bold text-[#2b2f59]/60">
+          © 2026 UMIDORI-TUNA PROJECT </p>
+      </div>
+
+      <!-- トップへ戻る -->
+      <a aria-label="TOPへ戻る"
+        class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-50 bg-[#ffbfd0] hover:bg-[#f8a5bc] text-[#2b2f59] nautical-border pop-shadow pop-shadow-hover rounded-full p-3 sm:px-4 sm:py-3 flex items-center gap-1.5 transition-all duration-200 cursor-pointer shadow-lg group"
+        href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">
+        <span class="material-symbols-outlined text-lg sm:text-xl font-bold">arrow_upward</span>
+        <span class="text-xs font-black tracking-wider hidden sm:inline-block pr-1">TOPへ戻る</span>
+      </a>
+</body>
+
+</html>
