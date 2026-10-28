@@ -1,0 +1,63 @@
+/* 影1　*/
+.pop-shadow {
+  box-shadow: 4px 4px 0px 0px #2b2f59;
+}
+.pop-shadow-lg {
+  box-shadow: 6px 6px 0px 0px #2b2f59;
+}
+.pop-shadow-coral {
+  box-shadow: 4px 4px 0px 0px #f8a5bc;
+}
+.pop-shadow-sm {
+  box-shadow: 2.5px 2.5px 0px 0px #2b2f59;
+}
+.pop-shadow-hover:hover {
+  box-shadow: 6px 6px 0px 0px #2b2f59;
+  transform: translate(-2px, -2px);
+}
+.pop-shadow-active:active {
+  box-shadow: 2px 2px 0px 0px #2b2f59;
+  transform: translate(2px, 2px);
+}
+
+/* 影2 */
+.nautical-border {
+  border: 3px solid #2b2f59;
+}
+.nautical-border-thin {
+  border: 2px solid #2b2f59;
+}
+
+/* 背景カラー */
+.sailor-check-bg {
+  background-color: #FAF6F3;
+  background-image:
+    linear-gradient(45deg, rgba(195, 229, 244, 0.45) 25%, transparent 25%, transparent 75%, rgba(195, 229, 244, 0.45) 75%, rgba(195, 229, 244, 0.45)),
+    linear-gradient(45deg, rgba(255, 191, 208, 0.45) 25%, transparent 25%, transparent 75%, rgba(255, 191, 208, 0.45) 75%, rgba(255, 191, 208, 0.45));
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+.ribbon-gingham-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    #ffbfd0,
+    #ffbfd0 10px,
+    #C3E5F4 10px,
+    #C3E5F4 20px,
+    #FFF0F3 20px,
+    #FFF0F3 30px
+  );
+}
+
+/*　アニメーションなど */
+.fluffy-float {
+  animation: gentleFloat 5s ease-in-out infinite alternate;
+}
+.fluffy-float-delay {
+  animation-delay: 1.5s;
+}
+@keyframes gentleFloat {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-8px) rotate(1.2deg); }
+}
