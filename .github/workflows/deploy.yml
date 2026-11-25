@@ -18,6 +18,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -39,6 +43,13 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: Samples/TypeScript/Demo/dist
+      - name: Publish build branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: build
+          publish_dir: Samples/TypeScript/Demo/dist
+          commit_message: Build from ${{ github.sha }}
 
   deploy:
     environment:

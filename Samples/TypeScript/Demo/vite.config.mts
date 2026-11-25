@@ -7,7 +7,8 @@ export default defineConfig((env: ConfigEnv): UserConfig => {
       port: 5000,
     },
     root: './',
-    base: env.command === 'build' ? '/Tuna_Web/' : '/',
+    // Use relative paths for GitHub Pages and local exhibition subfolders.
+    base: env.command === 'build' ? './' : '/',
     publicDir: './public',
     resolve: {
       extensions: ['.ts', '.js'],
